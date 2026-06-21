@@ -4,7 +4,7 @@ from huggingface_hub import hf_hub_download
 import joblib
 
 # Download and load the model
-model_path = hf_hub_download(repo_id="Sathya55/tourism_newplan_adoption_model", filename="best_toursim_opt_model_v1.joblib")
+model_path = hf_hub_download(repo_id="Sathya55/tourism-prediction-model", filename="best_toursim_opt_model_v1.joblib")
 model = joblib.load(model_path)
 
 # Streamlit UI for Machine Failure Prediction

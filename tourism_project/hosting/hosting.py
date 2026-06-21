@@ -3,7 +3,7 @@ from huggingface_hub import HfApi, create_repo
 import os
 
 
-repo_id="Sathya55/tourism-newplan-adoption-prediction"        # the target repo
+repo_id="Sathya55/wellness-tourism-prediction"        # the target repo
 repo_type="space"
 space_sdk="docker"  # Because we're using a Docker backend
 private=False  # Make it private if needed
@@ -11,7 +11,7 @@ private=False  # Make it private if needed
 # api = HfApi(token=os.getenv("HF_TOKEN"))
 # api.upload_folder(
 #     folder_path="deployment",     # the local folder containing your files
-#     repo_id="BharathonAI/tourism-newplan-adoption-prediction",          # the target repo
+#               # the target repo
 #     repo_type="space",                      # dataset, model, or space
 #     path_in_repo="",                          # optional: subfolder path inside the repo
 # )

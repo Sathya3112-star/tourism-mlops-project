@@ -25,10 +25,10 @@ mlflow.set_experiment("MLOps_CICD_experiment_2")
 api = HfApi()
 
 
-Xtrain_path = "hf://datasets/Sathya55/tourism-newplan-adoption-prediction/Xtrain.csv"
-Xtest_path = "hf://datasets/Sathya55/tourism-newplan-adoption-prediction/Xtest.csv"
-ytrain_path = "hf://datasets/Sathya55/tourism-newplan-adoption-prediction/ytrain.csv"
-ytest_path = "hf://datasets/Sathya55/tourism-newplan-adoption-prediction/ytest.csv"
+Xtrain_path = "hf://datasets/Sathya55/tourism-dataset/Xtrain.csv"
+Xtest_path = "hf://datasets/Sathya55/tourism-dataset/Xtest.csv"
+ytrain_path = "hf://datasets/Sathya55/tourism-dataset/ytrain.csv"
+ytest_path = "hf://datasets/Sathya55/tourism-dataset/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)
@@ -130,7 +130,7 @@ with mlflow.start_run():
     print(f"Model saved as artifact at: {model_path}")
 
     # Upload to Hugging Face
-    repo_id = "Sathya55/tourism_newplan_adoption_model"
+    repo_id = "Sathya55/tourism-prediction-model"
     repo_type = "model"
 
     # Step 1: Check if the space exists
